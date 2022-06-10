@@ -1,0 +1,17 @@
+{
+  "name": "systemeio/dto",
+  "keywords": [
+    "dto"
+  ],
+  "homepage": "https://github.com/systemeio/dto",
+  "authors": [
+    {
+      "name": "Systeme"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Systeme\\Component\\Dto\\": ""
+    }
+  }
+}
