@@ -1,6 +1,8 @@
 <?php
 
-class LectureOwner
+namespace Systeme\Component\Dto;
+
+class UserDto
 {
     private int $id;
 
