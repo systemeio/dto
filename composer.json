@@ -13,5 +13,8 @@
     "psr-4": {
       "Systeme\\Component\\Dto\\": ""
     }
+  },
+  "require": {
+    "php": ">=8.0"
   }
 }
