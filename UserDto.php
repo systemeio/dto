@@ -9,6 +9,7 @@ class UserDto
     private ?string $firstName;
     private ?string $lastName;
     private ?string $dashboardLocale;
+    private ?string $avatarUrl;
 
     public function getId(): int
     {
@@ -68,5 +69,17 @@ class UserDto
     public function getDashboardLocale(): ?string
     {
         return $this->dashboardLocale;
+    }
+
+    public function getAvatarUrl(): ?string
+    {
+        return $this->avatarUrl;
+    }
+
+    public function setAvatarUrl(?string $avatarUrl): UserDto
+    {
+        $this->avatarUrl = $avatarUrl;
+
+        return $this;
     }
 }
