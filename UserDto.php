@@ -10,6 +10,7 @@ class UserDto
     private ?string $lastName;
     private ?string $dashboardLocale;
     private ?string $avatarUrl;
+    private ?bool $isDomainOwner;
 
     public function getId(): int
     {
@@ -79,6 +80,18 @@ class UserDto
     public function setAvatarUrl(?string $avatarUrl): UserDto
     {
         $this->avatarUrl = $avatarUrl;
+
+        return $this;
+    }
+
+    public function getIsDomainOwner(): ?bool
+    {
+        return $this->isDomainOwner;
+    }
+
+    public function setIsDomainOwner(?bool $isDomainOwner): UserDto
+    {
+        $this->isDomainOwner = $isDomainOwner;
 
         return $this;
     }
